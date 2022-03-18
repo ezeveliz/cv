@@ -27,7 +27,7 @@ Laws of motion, gravitation, minting coins, disliking [Robert Hooke](http://en.w
 
 ### Conocimientos
 
-Cooling, power series, optics, alchemy, planetary motions, apples.
+PHP, Laravel, Bootstrap, Vainilla JS, Java, C, C#
 
 
 ## Educación
@@ -66,17 +66,23 @@ Argentino
 
 27 años(01-10-1994)
 
+
 ## Experiencia
 
-`1600`
-__Royal Mint__, London
+`01/08/2013 - 01/12/2013`
+__Euroelectric__, Pasantía 
 
-- Warden
-- Minted coins
+- Reparación y mantenimiento de equipos eléctricos.
 
-`1600`
-__Lucasian professor of Mathematics__, Cambridge University
+`01/02/2015 - 15/07/2015`
+__Euroelectric__, Reemplazo
 
+- Administración. Encargado de gestionar pedidos tanto para empresas como para particulares.
+
+`11/03/2020 - Actualidad`
+__Arbil__, Desarrollo
+
+- Diseño, desarrollo e implementación FullStack desde cero de un sistema orientado a empresas logísticas con capacidad de optimización de rutas de transporte, manejo de cuenta corriente de clientes y control de stock
 
 
 <!-- ### Footer
