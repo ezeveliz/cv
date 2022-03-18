@@ -7,7 +7,7 @@ on:
 jobs:
   html_to_pdf:
     runs-on: ubuntu-latest
-    name: get_artifact
+    name: Generate CV
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -28,9 +28,9 @@ jobs:
           name: CV PDF
           path: ./Ezequiel_Veliz_CV.pdf
       - name: Release CV
-        uses: fnkr/github-action-ghr@v1
-        env:
-          GHR_PATH: ./Ezequiel_Veliz_CV.pdf
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GHR_REPLACE: true
+        uses: SierraSoftworks/gh-releases@v1.0.4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          overwrite: 'true'
+          files: Ezequiel_Veliz_CV.pdf
     
