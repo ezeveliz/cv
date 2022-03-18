@@ -27,4 +27,10 @@ jobs:
         with:
           name: CV PDF
           path: ./Ezequiel_Veliz_CV.pdf
+      - name: Release CV
+        uses: fnkr/github-action-ghr@v1
+        env:
+          GHR_PATH: ./Ezequiel_Veliz_CV.pdf
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GHR_REPLACE: true
     
