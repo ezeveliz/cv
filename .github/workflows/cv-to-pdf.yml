@@ -23,6 +23,7 @@ jobs:
           htmlFile: ./_site/index.html
           # output file path
           outputFile: ./Ezequiel_Veliz_CV.pdf
+          pdfOptions: '{"format": "A4", "margin": {"top": "10mm", "left": "10mm", "right": "10mm", "bottom": "10mm"}}'
       - name: Upload PDF CV
         uses: actions/upload-artifact@v2
         with:
