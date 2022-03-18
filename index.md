@@ -4,7 +4,7 @@ title: Ezequiel Veliz's CV
 ---
 
 <div id="profile-photo">
-<img alt="" src="assets/images/SSOO.jpg"/>
+<img alt="Profile" src="assets/images/SSOO.jpg"/>
 </div>
 
 # Ezequiel Veliz
@@ -20,9 +20,9 @@ Técnico electrónico, Estudiante de Ingeniería en Sistemas de la Información.
 
 Lead Developer en <a href="https://arbil.com.ar">Arbil</a>, proveedor de sistemas para empresas logísticas.
 
-### Specialized in
+### Objetivo
 
-Laws of motion, gravitation, minting coins, disliking [Robert Hooke](http://en.wikipedia.org/wiki/Robert_Hooke)
+Busco continuar desarrollando mi experiencia profesional en paralelo a la finalización de mi formación académica, aplicando todos mis conocimientos en la resolución de nuevos y diferentes desafíos.
 
 
 ### Conocimientos
@@ -77,12 +77,12 @@ __Euroelectric__, Pasantía
 `01/02/2015 - 15/07/2015`
 __Euroelectric__, Reemplazo
 
-- Administración. Encargado de gestionar pedidos tanto para empresas como para particulares.
+- Administración del departamento de iluminación. Encargado de gestionar pedidos tanto para empresas como para particulares.
 
 `11/03/2020 - Actualidad`
 __Arbil__, Desarrollo
 
-- Diseño, desarrollo e implementación FullStack desde cero de un sistema orientado a empresas logísticas con capacidad de optimización de rutas de transporte, manejo de cuenta corriente de clientes y control de stock
+- Diseño, desarrollo e implementación FullStack desde cero de un sistema orientado a empresas logísticas con capacidad de optimización de rutas de transporte, manejo de itinerarios, cuenta corriente de clientes y control de stock.
 
 
 <!-- ### Footer
