@@ -1,8 +1,9 @@
 name: Build Pdf
 
 on:
-  push:
-    branches: [ main ]
+  create:
+    tags:
+      - v*
 
 jobs:
   html_to_pdf:
