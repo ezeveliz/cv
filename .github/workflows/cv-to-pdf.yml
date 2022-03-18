@@ -26,4 +26,9 @@ jobs:
           htmlFile: ./_site/index.html
           # output file path
           outputFile: ./cv.pdf
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: cv PDF
+          path: ./cv.pdf
     
