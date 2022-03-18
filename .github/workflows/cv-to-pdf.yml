@@ -1,0 +1,20 @@
+name: Build Pdf
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  html_to_pdf:
+    runs-on: ubuntu-latest
+    name: get_artifact
+    steps:
+    - uses: actions/checkout@v2
+
+    - uses: actions/download-artifact@v3
+      with:
+        name: my-artifact
+
+    - name: Display structure of downloaded files
+      run: ls -R
+    
