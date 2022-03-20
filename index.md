@@ -4,7 +4,7 @@ title: Ezequiel Veliz's CV
 ---
 
 <div id="profile-photo">
-<img alt="Profile" src="assets/images/SSOO.jpg"/>
+<img alt="Profile" src="assets/images/profile.jpg"/>
 </div>
 
 # Ezequiel Veliz
