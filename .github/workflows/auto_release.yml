@@ -11,7 +11,31 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
 
+  Changelog:
+
+    runs-on: ubuntu-latest
+
+    outputs:
+      shouldCreateRelease: ${{ steps.changelog.outputs.shouldCreateRelease }}
+      shouldCreatePDF: ${{ steps.changelog.outputs.shouldCreatePDF }}
+      version: ${{ steps.changelog.outputs.version }}
+      release: ${{ steps.changelog.outputs.release }}
+      changelog: ${{ steps.changelog.outputs.changelog }}
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Read the Releases File
+        id: changelog
+        uses: Jeconias/changelog@v1.3
+        with:
+          path: "./RELEASES.md"
+      - run: echo "${{steps.changelog.outputs.changelog}}"
+
   html_to_pdf:
+
+    needs: Changelog
+    if: needs.Changelog.outputs.shouldCreateRelease == 'true' && needs.Changelog.outputs.shouldCreatePDF == 'true'
+
     runs-on: ubuntu-latest
     name: Generate CV
     steps:
@@ -35,31 +59,10 @@ jobs:
           name: CV_PDF
           path: ./Ezequiel_Veliz_CV.pdf
 
-  Changelog:
-
-    needs: html_to_pdf
-
-    runs-on: ubuntu-latest
-    
-    outputs:
-      shouldCreateRelease: ${{ steps.changelog.outputs.shouldCreateRelease }}
-      version: ${{ steps.changelog.outputs.version }}
-      release: ${{ steps.changelog.outputs.release }}
-      changelog: ${{ steps.changelog.outputs.changelog }}
-
-    steps:
-      - uses: actions/checkout@v2
-      - name: Read the Releases File
-        id: changelog
-        uses: Jeconias/changelog@v1.3
-        with:
-          path: "./RELEASES.md"  
-      - run: echo "${{steps.changelog.outputs.changelog}}"
-      
-  Release:
+  Full_Release:
   
-    needs: Changelog
-    if: needs.Changelog.outputs.shouldCreateRelease == 'true'
+    needs: [Changelog, html_to_pdf]
+    if: needs.Changelog.outputs.shouldCreateRelease == 'true' && needs.Changelog.outputs.shouldCreatePDF == 'true'
 
     runs-on: ubuntu-latest
 
@@ -83,3 +86,20 @@ jobs:
           body: ${{needs.Changelog.outputs.changelog}}
           asset_files: './Ezequiel_Veliz_CV.pdf'
 
+  Simple_Release:
+
+    needs: [Changelog]
+    if: needs.Changelog.outputs.shouldCreateRelease == 'true' && needs.Changelog.outputs.shouldCreatePDF == 'false'
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Create Release
+        uses: Hs1r1us/Release-AIO@v1.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ needs.Changelog.outputs.version }}
+          release_name: ${{ needs.Changelog.outputs.release }}
+          body: ${{needs.Changelog.outputs.changelog}}

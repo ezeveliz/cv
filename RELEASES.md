@@ -1,11 +1,15 @@
 ## Changelog
 
-<!-- Version start @@ {"version": "v1.3.1", "release": "Final", "shouldCreateRelease": "false"} -->
+<!-- Version start @@ {"version": "v1.3.2", "release": "Optimized Release", "shouldCreateRelease": "true", "shouldCreatePDF": "false"} -->
+
+- ### v1.3.2 2022/03/25
+
+  - Optimizo el release, agregando la posibilidad de crear el PDF o no
+  <!-- Version end -->
 
 - ### v1.3.1 2022-3-24
 
   - Finalmente, genero el release automáticamente y le agrego el PDF generado
-  <!-- Version end -->
 
 - ### v1.3 2022-0-24
 
