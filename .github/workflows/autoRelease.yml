@@ -72,5 +72,5 @@ jobs:
           tag_name: ${{ needs.Changelog.outputs.version }}
           release_name: ${{ needs.Changelog.outputs.release }}
           body: ${{needs.Changelog.outputs.changelog}}
-          asset_files: Ezequiel_Veliz_CV.pdf
+          asset_files: './Ezequiel_Veliz_CV.pdf'
 
