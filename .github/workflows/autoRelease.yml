@@ -73,11 +73,6 @@ jobs:
       - name: Display structure of downloaded files
         run: ls -R
 
-      - name: Decompress
-        uses: TonyBogdanov/zip@1.0
-        with:
-          args: unzip -qq ./CV_PDF.zip -d ./Ezequiel_Veliz_CV.pdf
-
       - name: Create Release
         uses: Hs1r1us/Release-AIO@v1.0
         env:
