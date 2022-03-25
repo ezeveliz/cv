@@ -68,7 +68,10 @@ jobs:
 
       - uses: actions/download-artifact@v3
         with:
-          name: CV_PDF.zip
+          name: CV_PDF
+
+      - name: Display structure of downloaded files
+        run: ls -R
 
       - name: Decompress
         uses: TonyBogdanov/zip@1.0
