@@ -27,8 +27,7 @@ jobs:
         id: changelog
         uses: Jeconias/changelog@v1.3
         with:
-          path: "./Releases/README.md"  
-      - run: echo "${{steps.changelog.outputs.changelog}} | ${{steps.ID.outputs.version}}"
+          path: "./RELEASES.md"  
       
   Release:
   
