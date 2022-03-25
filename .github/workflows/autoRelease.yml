@@ -14,6 +14,12 @@ jobs:
   Changelog:
   
     runs-on: ubuntu-latest
+    
+    outputs:
+      shouldCreateRelease: ${{ steps.changelog.outputs.shouldCreateRelease }}
+      version: ${{ steps.changelog.outputs.version }}
+      release: ${{ steps.changelog.outputs.release }}
+      changelog: ${{ steps.changelog.outputs.changelog }}
 
     steps:
       - uses: actions/checkout@v2
