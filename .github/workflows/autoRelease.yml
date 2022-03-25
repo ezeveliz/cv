@@ -11,8 +11,34 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
 
+  html_to_pdf:
+    runs-on: ubuntu-latest
+    name: Generate CV
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Build Jekyll CV
+        uses: mbursi/jekyll-build-only-action@v1.0.0
+      - name: Build PDF CV
+        # You may pin to the exact commit or the version.
+        # uses: fifsky/html-to-pdf-action@44d977811fe614e8eba4471a108f6bd355709ddd
+        uses: fifsky/html-to-pdf-action@v0.0.2
+        with:
+          # html file path
+          htmlFile: ./_site/index.html
+          # output file path
+          outputFile: ./Ezequiel_Veliz_CV.pdf
+          pdfOptions: '{"format": "A4", "margin": {"top": "10mm", "left": "10mm", "right": "10mm", "bottom": "10mm"}}'
+      - name: Upload PDF CV
+        uses: actions/upload-artifact@v2
+        with:
+          name: CV PDF
+          path: ./Ezequiel_Veliz_CV.pdf
+
   Changelog:
-  
+
+    needs: html_to_pdf
+
     runs-on: ubuntu-latest
     
     outputs:
@@ -39,13 +65,12 @@ jobs:
 
     steps:
       - name: Create Release
-        uses: actions/create-release@v1
+        uses: Hs1r1us/Release-AIO@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: ${{ needs.Changelog.outputs.version }}
           release_name: ${{ needs.Changelog.outputs.release }}
           body: ${{needs.Changelog.outputs.changelog}}
-          draft: false
-          prerelease: false
+          asset_files: Ezequiel_Veliz_CV.pdf
 
