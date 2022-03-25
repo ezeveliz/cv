@@ -1,0 +1,41 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Auto Release
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  push:
+    branches: [ main ]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+
+  GetChangelog:
+  
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Read the Releases File
+        id: changelog
+        uses: Jeconias/changelog@v1.3
+        with:
+          path: "./RELEASES.md"
+  Release:
+    needs: GetChangelog
+    if: needs.Changelog.outputs.shouldCreateRelease == 'true'
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Create Release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ needs.Changelog.outputs.version }}
+          release_name: ${{ needs.Changelog.outputs.release }}
+          body: ${{needs.Changelog.outputs.changelog}}
+          draft: false
+          prerelease: false
+
