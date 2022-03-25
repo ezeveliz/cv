@@ -24,7 +24,7 @@ jobs:
           path: "./RELEASES.md"
   Release:
     needs: GetChangelog
-    if: needs.Changelog.outputs.shouldCreateRelease == 'true'
+    if: needs.GetChangelog.outputs.shouldCreateRelease == 'true'
 
     runs-on: ubuntu-latest
 
@@ -34,9 +34,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: ${{ needs.Changelog.outputs.version }}
-          release_name: ${{ needs.Changelog.outputs.release }}
-          body: ${{needs.Changelog.outputs.changelog}}
+          tag_name: ${{ needs.GetChangelog.outputs.version }}
+          release_name: ${{ needs.GetChangelog.outputs.release }}
+          body: ${{needs.GetChangelog.outputs.changelog}}
           draft: false
           prerelease: false
 
