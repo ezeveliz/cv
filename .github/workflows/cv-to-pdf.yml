@@ -1,7 +1,7 @@
 name: Build Pdf
 
 on:
-  create:
+  push:
     tags:
       - v*
 
