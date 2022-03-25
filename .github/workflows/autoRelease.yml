@@ -32,7 +32,7 @@ jobs:
       - name: Upload PDF CV
         uses: actions/upload-artifact@v2
         with:
-          name: CV PDF
+          name: CV_PDF
           path: ./Ezequiel_Veliz_CV.pdf
 
   Changelog:
@@ -64,6 +64,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: CV_PDF
+
+      - name: Decompress
+        uses: TonyBogdanov/zip@1.0
+        with:
+          args: unzip -qq ./CV_PDF.zip -d ./Ezequiel_Veliz_CV.pdf
+
       - name: Create Release
         uses: Hs1r1us/Release-AIO@v1.0
         env:
@@ -72,5 +83,5 @@ jobs:
           tag_name: ${{ needs.Changelog.outputs.version }}
           release_name: ${{ needs.Changelog.outputs.release }}
           body: ${{needs.Changelog.outputs.changelog}}
-          asset_files: './CV PDF.zip'
+          asset_files: './Ezequiel_Veliz_CV.pdf'
 

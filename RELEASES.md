@@ -1,11 +1,15 @@
 ## Changelog
 
-<!-- Version start @@ {"version": "v1.0", "release": "Final??", "shouldCreateRelease": "true"} -->
+<!-- Version start @@ {"version": "v1.1", "release": "Final???", "shouldCreateRelease": "true"} -->
+
+- ### v1.1 2022-0-24
+
+  - Final???
+  <!-- Version end -->
 
 - ### v1.0 2022-0-24
 
   - Final??
-  <!-- Version end -->
 
 - ### v0.9 2022-0-24
 
