@@ -11,7 +11,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
 
-  GetChangelog:
+  Changelog:
   
     runs-on: ubuntu-latest
 
@@ -21,10 +21,13 @@ jobs:
         id: changelog
         uses: Jeconias/changelog@v1.3
         with:
-          path: "./RELEASES.md"
+          path: "./RELEASES.md"  
+      - run: echo "${{steps.changelog.outputs.changelog}}"
+      
   Release:
-    needs: GetChangelog
-    if: needs.GetChangelog.outputs.shouldCreateRelease == 'true'
+  
+    needs: Changelog
+    if: needs.Changelog.outputs.shouldCreateRelease == 'true'
 
     runs-on: ubuntu-latest
 
@@ -34,9 +37,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: ${{ needs.GetChangelog.outputs.version }}
-          release_name: ${{ needs.GetChangelog.outputs.release }}
-          body: ${{needs.GetChangelog.outputs.changelog}}
+          tag_name: ${{ needs.Changelog.outputs.version }}
+          release_name: ${{ needs.Changelog.outputs.release }}
+          body: ${{needs.Changelog.outputs.changelog}}
           draft: false
           prerelease: false
 
