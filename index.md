@@ -27,7 +27,7 @@ Busco continuar desarrollando mi experiencia profesional en paralelo a la finali
 
 ### Conocimientos
 
-PHP, Laravel, Bootstrap, Vainilla JS, Java, C, C#
+PHP, Laravel, Bootstrap, Vainilla JS, PostgreSQL, IndexedDB, Java, C, C#
 
 
 ## Educación

@@ -1,11 +1,15 @@
 ## Changelog
 
-<!-- Version start @@ {"version": "v1.3.3", "release": "Test Full Release", "shouldCreateRelease": "true", "shouldCreatePDF": "true"} -->
+<!-- Version start @@ {"version": "v1.4", "release": "Added Knowledge", "shouldCreateRelease": "true", "shouldCreatePDF": "true"} -->
+
+- ### v1.4 2022/03/29
+
+  - Faltaba agregar un par de tecnologías a la sección de conocimientos
+  <!-- Version end -->
 
 - ### v1.3.3 2022/03/25
 
   - Pruebo que funcione el release completo
-  <!-- Version end -->
 
 - ### v1.3.2 2022/03/25
 
