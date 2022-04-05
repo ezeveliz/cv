@@ -1,11 +1,16 @@
 ## Changelog
 
-<!-- Version start @@ {"version": "v1.4", "release": "Added Knowledge", "shouldCreateRelease": "true", "shouldCreatePDF": "true"} -->
+<!-- Version start @@ {"version": "v1.5", "release": "Added Knowledge", "shouldCreateRelease": "true", "shouldCreatePDF": "true"} -->
+
+- ### v1.5 2022/04/05
+
+  - Agrego Docker a la lista de conocimientos
+  - Normalizo el formato de mi fecha de cumpleaños
+  <!-- Version end -->
 
 - ### v1.4 2022/03/29
 
   - Faltaba agregar un par de tecnologías a la sección de conocimientos
-  <!-- Version end -->
 
 - ### v1.3.3 2022/03/25
 

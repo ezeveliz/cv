@@ -27,7 +27,7 @@ Busco continuar desarrollando mi experiencia profesional en paralelo a la finali
 
 ### Conocimientos
 
-PHP, Laravel, Bootstrap, Vainilla JS, PostgreSQL, IndexedDB, Java, C, C#
+PHP, Laravel, Docker, Bootstrap, Vainilla JS, PostgreSQL, IndexedDB, Java, C, C#
 
 
 ## Educación
@@ -64,7 +64,7 @@ Argentino
 
 ### Edad
 
-27 años(01-10-1994)
+27 años(01/10/1994)
 
 
 ## Experiencia
@@ -87,6 +87,4 @@ __Arbil__, Desarrollo
 
 <!-- ### Footer
 
-Last updated: March 2022 -->
-
-
+Last updated: April 2022 -->
