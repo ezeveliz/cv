@@ -23,10 +23,10 @@ jobs:
       changelog: ${{ steps.changelog.outputs.changelog }}
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3.0.2
       - name: Read the Releases File
         id: changelog
-        uses: Jeconias/changelog@v1.3
+        uses: Jeconias/changelog@v1.4
         with:
           path: "./RELEASES.md"
       - run: echo "${{steps.changelog.outputs.changelog}}"
@@ -40,7 +40,7 @@ jobs:
     name: Generate CV
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3.0.2
       - name: Build Jekyll CV
         uses: mbursi/jekyll-build-only-action@v1.0.0
       - name: Build PDF CV
@@ -67,7 +67,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3.0.2
 
       - uses: actions/download-artifact@v3
         with:

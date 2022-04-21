@@ -1,12 +1,17 @@
 ## Changelog
 
-<!-- Version start @@ {"version": "v1.5", "release": "Added Knowledge", "shouldCreateRelease": "true", "shouldCreatePDF": "true"} -->
+<!-- Version start @@ {"version": "v1.5.1", "release": "Updated Release Dependencies", "shouldCreateRelease": "true", "shouldCreatePDF": "false"} -->
+
+- ### v1.5.1 2022/04/21
+
+  - Actualizo dependencias del release
+
+  <!-- Version end -->
 
 - ### v1.5 2022/04/05
 
   - Agrego Docker a la lista de conocimientos
   - Normalizo el formato de mi fecha de cumpleaños
-  <!-- Version end -->
 
 - ### v1.4 2022/03/29
 
