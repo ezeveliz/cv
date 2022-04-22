@@ -34,7 +34,7 @@ jobs:
   html_to_pdf:
 
     needs: Changelog
-    if: needs.Changelog.outputs.shouldCreateRelease == 'true' && needs.Changelog.outputs.shouldCreatePDF == 'true'
+    if: needs.Changelog.outputs.shouldCreateRelease == 'true'
 
     runs-on: ubuntu-latest
     name: Generate CV
@@ -62,7 +62,7 @@ jobs:
   Full_Release:
   
     needs: [Changelog, html_to_pdf]
-    if: needs.Changelog.outputs.shouldCreateRelease == 'true' && needs.Changelog.outputs.shouldCreatePDF == 'true'
+    if: needs.Changelog.outputs.shouldCreateRelease == 'true'
 
     runs-on: ubuntu-latest
 

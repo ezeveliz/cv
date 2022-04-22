@@ -1,12 +1,16 @@
 ## Changelog
 
-<!-- Version start @@ {"version": "v1.5.2", "release": "Fix release", "shouldCreateRelease": "true"} -->
+<!-- Version start @@ {"version": "v1.5.2.1", "release": "Fix release", "shouldCreateRelease": "true"} -->
+
+- ### v1.5.2.1 2022/04/21
+
+  - Me había olvidado de un par de líneas que seguían haciendo referencia a la variable anteriormente eliminada
+
+  <!-- Version end -->
 
 - ### v1.5.2 2022/04/21
 
   - Existía un flag para crear o no el PDF, si se ponía en false, el link de acceso a la última versión no funcionaba
-
-  <!-- Version end -->
 
 - ### v1.5.1 2022/04/21
 
