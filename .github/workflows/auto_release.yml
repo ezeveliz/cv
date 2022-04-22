@@ -31,7 +31,7 @@ jobs:
           path: "./RELEASES.md"
       - run: echo "${{steps.changelog.outputs.changelog}}"
 
-  html_to_pdf:
+  Generate_CV:
 
     needs: Changelog
     if: needs.Changelog.outputs.shouldCreateRelease == 'true'
@@ -59,9 +59,9 @@ jobs:
           name: CV_PDF
           path: ./Ezequiel_Veliz_CV.pdf
 
-  Full_Release:
+  Release:
   
-    needs: [Changelog, html_to_pdf]
+    needs: [Changelog, Generate_CV]
     if: needs.Changelog.outputs.shouldCreateRelease == 'true'
 
     runs-on: ubuntu-latest
@@ -85,21 +85,3 @@ jobs:
           release_name: ${{ needs.Changelog.outputs.release }}
           body: ${{needs.Changelog.outputs.changelog}}
           asset_files: './Ezequiel_Veliz_CV.pdf'
-
-  Simple_Release:
-
-    needs: [Changelog]
-    if: needs.Changelog.outputs.shouldCreateRelease == 'true'
-
-    runs-on: ubuntu-latest
-
-    steps:
-
-      - name: Create Release
-        uses: Hs1r1us/Release-AIO@v1.0
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag_name: ${{ needs.Changelog.outputs.version }}
-          release_name: ${{ needs.Changelog.outputs.release }}
-          body: ${{needs.Changelog.outputs.changelog}}
