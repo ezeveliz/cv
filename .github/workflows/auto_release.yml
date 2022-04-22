@@ -89,7 +89,7 @@ jobs:
   Simple_Release:
 
     needs: [Changelog]
-    if: needs.Changelog.outputs.shouldCreateRelease == 'true' && needs.Changelog.outputs.shouldCreatePDF == 'false'
+    if: needs.Changelog.outputs.shouldCreateRelease == 'true'
 
     runs-on: ubuntu-latest
 

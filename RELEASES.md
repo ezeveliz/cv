@@ -1,12 +1,16 @@
 ## Changelog
 
-<!-- Version start @@ {"version": "v1.5.1", "release": "Updated Release Dependencies", "shouldCreateRelease": "true", "shouldCreatePDF": "false"} -->
+<!-- Version start @@ {"version": "v1.5.2", "release": "Fix release", "shouldCreateRelease": "true"} -->
+
+- ### v1.5.2 2022/04/21
+
+  - Existía un flag para crear o no el PDF, si se ponía en false, el link de acceso a la última versión no funcionaba
+
+  <!-- Version end -->
 
 - ### v1.5.1 2022/04/21
 
   - Actualizo dependencias del release
-
-  <!-- Version end -->
 
 - ### v1.5 2022/04/05
 
