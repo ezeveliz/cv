@@ -8,26 +8,21 @@ title: Ezequiel Veliz's CV
 </div>
 
 # Ezequiel Veliz
-Técnico electrónico, Estudiante de Ingeniería en Sistemas de la Información.
+Estudiante de Ingeniería en Sistemas de la Información.
 
 <div id="webaddress">
-<a href="mailto:ezequiel_veliz@hotmail.com">️ ezequiel_veliz@hotmail.com</a>
+<a href="mailto:ezequielveliz@gmail.com">️ ezequielveliz@gmail.com</a>
 | <a href="tel:+541133426797">Teléfono: (+54) 11-3342-6797</a>
 </div>
 
 
 ## Actualmente
+Lidero un equipo de 5 desarrolladores, a punto de cerrar una segunda implementación de Consumer Goods Cloud y comenzar una tercera.
 
-Lead Developer en [Arbil](https://arbil.com.ar), proveedor de sistemas para empresas logísticas.
 
 ### Objetivo
 
-Busco continuar desarrollando mi experiencia profesional en paralelo a la finalización de mi formación académica, aplicando todos mis conocimientos en la resolución de nuevos y diferentes desafíos.
-
-
-### Conocimientos
-
-PHP, Laravel, Docker, Bootstrap, Vainilla JS, PostgreSQL, IndexedDB, Java, C, C#
+Me apasiona aprovechar la tecnología para impulsar el éxito empresarial y busco constantemente nuevos y emocionantes desafíos que me permitan innovar y sobresalir.
 
 
 ## Educación
@@ -41,6 +36,11 @@ __Instituto Tecnológico San Bonifacio__
 __UTN BA__
 
 - Ingeniería en Sistemas de la Información, 4° año
+
+`2023`
+__Salesforce Certification__
+
+- Platform Developer 1
 
 `2015`
 __Buenos Aires Open Centre__
@@ -64,25 +64,25 @@ Argentino
 
 ### Edad
 
-27 años(01/10/1994)
+29 años(01/10/1994)
 
 
 ## Experiencia
 
-`01/08/2013 - 01/12/2013`
-__Euroelectric__, Pasantía 
-
-- Reparación y mantenimiento de equipos eléctricos.
-
-`01/02/2015 - 15/07/2015`
-__Euroelectric__, Reemplazo
-
-- Administración del departamento de iluminación. Encargado de gestionar pedidos tanto para empresas como para particulares.
-
-`11/03/2020 - Actualidad`
+`11/03/2020 - 01/02/2023`
 __Arbil__, Desarrollo
 
-- Diseño, desarrollo e implementación FullStack desde cero de un sistema orientado a empresas logísticas con capacidad de optimización de rutas de transporte, seguimiento satelital, manejo de itinerarios, cuenta corriente de clientes y control de stock.
+- Diseño, desarrollo e implementación de un sistema orientado a empresas logísticas con capacidad de optimización de rutas de transporte, seguimiento satelital, manejo de itinerarios, cuenta corriente de clientes y control de stock.
+
+`04/07/2022 - 31/12/2023`
+__ProContacto__, Software Developer
+
+- Desarrollo de clases Apex y Triggers implementando batches, queueables y schedulables donde sea necesario, desarrollo de componentes de UI utilizando LWC. Implementación del primer proyecto de Salesforce Consumer Goods Cloud en América Latina.
+
+`01/01/2024 - Actualidad`
+__ProContacto__, Tech lead
+
+- Lidero un equipo de desarrollo involucrado actualmente en 2 proyectos enfocados en la implementación de la nube Consumer Goods Cloud de Salesforce. 
 
 
 <!-- ### Footer
