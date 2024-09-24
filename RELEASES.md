@@ -1,12 +1,16 @@
 ## Changelog
 
-<!-- Version start @@ {"version": "v1.5.3", "release": "Fix release", "shouldCreateRelease": "true"} -->
+<!-- Version start @@ {"version": "v1.6", "release": "New Work Info", "shouldCreateRelease": "true"} -->
+
+- ### v1.6 2024/09/24
+
+  - Agrego info de ProContacto
+
+  <!-- Version end -->
 
 - ### v1.5.3 2022/04/21
 
   - Estaba intentado hacer el release 2 veces con el mismo número de versión
-
-  <!-- Version end -->
 
 - ### v1.5.2.1 2022/04/21
 
