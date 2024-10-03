@@ -8,37 +8,40 @@ title: Ezequiel Veliz's CV
 </div>
 
 # Ezequiel Veliz
-Estudiante de Ingeniería en Sistemas de la Información.
+Information Systems Engineering student.
 
 <div id="webaddress">
 <a href="mailto:ezequielveliz@gmail.com">️ ezequielveliz@gmail.com</a>
-| <a href="tel:+541133426797">Teléfono: (+54) 11-3342-6797</a>
+| <a href="tel:+541133426797">Telephone: (+54) 11-3342-6797</a>
 </div>
 
 
-## Actualmente
-Lidero un equipo de 5 desarrolladores, a punto de cerrar una segunda implementación de Consumer Goods Cloud y comenzar una tercera.
+## Currently
+
+I lead a team of 5 developers, about to complete a second implementation of Consumer Goods Cloud and to start a third.
 
 
-### Objetivo
+### Objective
 
-Me apasiona aprovechar la tecnología para impulsar el éxito empresarial y busco constantemente nuevos y emocionantes desafíos que me permitan innovar y sobresalir.
+I am passionate about leveraging technology to drive business success, and I am constantly seeking new and exciting challenges that allow me to innovate and excel.
 
 
-## Educación
+## Education
 
 `2007 - 2014`
 __Instituto Tecnológico San Bonifacio__
 
-- Técnico Electrónico
+- Electronic Technician.
 
-`2014 - actualidad`
+`2014 - Present`
 __UTN BA__
 
-- Ingeniería en Sistemas de la Información, 4° año
+- Information Systems Engineering, 4° year.
+
+## Certifications
 
 `2023`
-__Salesforce Certification__
+__Salesforce__
 
 - Platform Developer 1
 
@@ -48,43 +51,39 @@ __Buenos Aires Open Centre__
 - First Certificate
 
 
-## Datos Personales
+## Personal Data
 
-### Domicilio
+### Address
 
 [Tte. F. Bourquet 303, Luis Guillón, Esteban Echeverría, Pcia. de Bs As](https://www.google.com/maps/place/Tte.+F.+Bourquet+303,+B1838+Luis+Guillon,+Provincia+de+Buenos+Aires/@-34.804927,-58.4444723,19z/data=!3m1!4b1!4m13!1m7!3m6!1s0x95bcd3c630497967:0x84ab887c4090850a!2sTte.+F.+Bourquet+345-349,+Luis+Guillon,+Provincia+de+Buenos+Aires!3b1!8m2!3d-34.8050965!4d-58.4436042!3m4!1s0x95bcd3fa3a1e253f:0xab95a6faf46780b5!8m2!3d-34.8049281!4d-58.4439251)
 
-### Estado civil
+### Nationality
 
-Soltero
+Argentine
 
-### Nacionalidad
+### Age
 
-Argentino
-
-### Edad
-
-29 años(01/10/1994)
+30 years old(01/10/1994)
 
 
-## Experiencia
+## Experience
 
 `11/03/2020 - 01/02/2023`
-__Arbil__, Desarrollo
+__Arbil__, Software Developer
 
-- Diseño, desarrollo e implementación de un sistema orientado a empresas logísticas con capacidad de optimización de rutas de transporte, seguimiento satelital, manejo de itinerarios, cuenta corriente de clientes y control de stock.
+- Design and development of a system aimed at logistics companies, featuring route optimization, satellite tracking, itinerary management, customer account management, and stock control.
 
 `04/07/2022 - 31/12/2023`
 __ProContacto__, Software Developer
 
-- Desarrollo de clases Apex y Triggers implementando batches, queueables y schedulables donde sea necesario, desarrollo de componentes de UI utilizando LWC. Implementación del primer proyecto de Salesforce Consumer Goods Cloud en América Latina.
+- Development of Apex classes and Triggers, implementing batches, queueables, and schedulables where necessary, and development of UI components using LWC. Led the implementation of the first Salesforce Consumer Goods Cloud project in Latin America.
 
-`01/01/2024 - Actualidad`
-__ProContacto__, Tech lead
+`01/01/2024 - Present`
+__ProContacto__, Tech Lead
 
-- Lidero un equipo de desarrollo involucrado actualmente en 2 proyectos enfocados en la implementación de la nube Consumer Goods Cloud de Salesforce. 
+- I lead a development team currently involved in two projects focused on the implementation of Salesforce's Consumer Goods Cloud. 
 
 
 <!-- ### Footer
 
-Last updated: April 2022 -->
+Last updated: October 2024 -->
