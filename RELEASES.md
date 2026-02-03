@@ -1,6 +1,13 @@
 ## Changelog
 
-<!-- Version start @@ {"version": "v1.7.1", "release": "Docs Fix", "shouldCreateRelease": "true", "shouldCreatePDF": "false"} -->
+<!-- Version start @@ {"version": "v1.7.2", "release": "Docs & CI Fixes", "shouldCreateRelease": "true", "shouldCreatePDF": "false"} -->
+
+- ### v1.7.2 2026/02/03
+
+  - Fix duplicated line in README
+  - Add node_modules to gitignore
+  - Update build process documentation
+  - Document release variables and versioning
 
 - ### v1.7 2026/02/03
 
