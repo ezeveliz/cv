@@ -8,8 +8,13 @@ Este proyecto utiliza **Jekyll** pero puede ser ejecutado localmente utilizando 
 
 Para levantar el servidor localmente:
 
-```bash
-npx @11ty/eleventy --serve
-```
+1. Instalar dependencias:
+   ```bash
+   npm install
+   ```
+2. Iniciar el servidor:
+   ```bash
+   npm start
+   ```
 
 Esto levantará el sitio en [http://localhost:8080/](http://localhost:8080/).

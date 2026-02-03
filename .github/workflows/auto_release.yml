@@ -36,7 +36,7 @@ jobs:
   Generate_CV:
 
     needs: Changelog
-    if: needs.Changelog.outputs.shouldCreateRelease == 'true'
+    if: needs.Changelog.outputs.shouldCreatePDF == 'true'
 
     runs-on: ubuntu-latest
     name: Generate CV
@@ -70,7 +70,7 @@ jobs:
   Release:
   
     needs: [Changelog, Generate_CV]
-    if: needs.Changelog.outputs.shouldCreateRelease == 'true'
+    if: needs.Changelog.outputs.shouldCreateRelease == 'true' && always()
 
     runs-on: ubuntu-latest
 
@@ -78,6 +78,7 @@ jobs:
       - uses: actions/checkout@v3.0.2
 
       - uses: actions/download-artifact@v4
+        if: needs.Changelog.outputs.shouldCreatePDF == 'true'
         with:
           name: CV_PDF
 
@@ -92,4 +93,4 @@ jobs:
           tag_name: ${{ needs.Changelog.outputs.version }}
           release_name: ${{ needs.Changelog.outputs.release }}
           body: ${{needs.Changelog.outputs.changelog}}
-          asset_files: './Ezequiel_Veliz_CV.pdf'
+          asset_files: ${{ needs.Changelog.outputs.shouldCreatePDF == 'true' && './Ezequiel_Veliz_CV.pdf' || '' }}

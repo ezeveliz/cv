@@ -1,6 +1,6 @@
 ## Changelog
 
-<!-- Version start @@ {"version": "v1.7", "release": "Eleventy Migration & Text Update", "shouldCreateRelease": "true"} -->
+<!-- Version start @@ {"version": "v1.7.1", "release": "Docs Fix", "shouldCreateRelease": "true", "shouldCreatePDF": "false"} -->
 
 - ### v1.7 2026/02/03
 
