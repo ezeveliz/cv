@@ -1,6 +1,11 @@
 ## Changelog
 
-<!-- Version start @@ {"version": "v1.6", "release": "New Work Info", "shouldCreateRelease": "true"} -->
+<!-- Version start @@ {"version": "v1.7", "release": "Eleventy Migration & Text Update", "shouldCreateRelease": "true"} -->
+
+- ### v1.7 2026/02/03
+
+  - Migrate to Eleventy for local serving
+  - Update CV content (Architecture role, English translation)
 
 - ### v1.6 2024/09/24
 
