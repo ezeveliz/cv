@@ -3,6 +3,7 @@
     "version": "1.7.0",
     "description": "Ezequiel Veliz CV",
     "scripts": {
+        "start": "eleventy --serve",
         "build": "eleventy"
     },
     "keywords": [],
