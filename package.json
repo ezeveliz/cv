@@ -1,0 +1,14 @@
+{
+    "name": "cv",
+    "version": "1.7.0",
+    "description": "Ezequiel Veliz CV",
+    "scripts": {
+        "build": "eleventy"
+    },
+    "keywords": [],
+    "author": "Ezequiel Veliz",
+    "license": "ISC",
+    "devDependencies": {
+        "@11ty/eleventy": "^2.0.0"
+    }
+}
