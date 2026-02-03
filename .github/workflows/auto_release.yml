@@ -26,10 +26,12 @@ jobs:
       - uses: actions/checkout@v3.0.2
       - name: Read the Releases File
         id: changelog
-        uses: Jeconias/changelog@v1.4
-        with:
-          path: "./RELEASES.md"
-      - run: echo "${{steps.changelog.outputs.changelog}}"
+        run: python .github/scripts/parse_changelog.py
+
+      - name: Debug Changelog
+        env:
+          CHANGELOG_BODY: ${{ steps.changelog.outputs.changelog }}
+        run: echo "$CHANGELOG_BODY"
 
   Generate_CV:
 
